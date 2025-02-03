@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayam- Enjoy ad free music</title>
+ 
+    <link href="style.css" rel="stylesheet"/>
+    <link href="utility.css" rel="stylesheet"/>
+    <!--Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="flex">
+      
+        <div class="left">
+            <div class="logo"><a href="index.html">
+                <img class="logo"src="img/Swafy.png">
+            </a>
+            </div>
+            <div class="container conbor">
+                <div class="con active">
+                    <img class="invert icon" src="img/home.png">
+                    <span class="content">Home</span>
+                </div>
+             
+                <div class="con">
+                    <img class="invert icon" src="img/search.png">
+                    <span class="content"><a href="about.html">About</a></span>
+                </div>
+            </div>
+
+            <div class="container2 conbor2" style="margin: 25px 12px;">
+                <div class="con">
+                    <img class="icon" src="img/library.png">
+                    <span class="content">Liabrary</span>
+                </div>
+                <div class="btnsrl">
+                    <button class="btn" onclick="bcolor(this)">Playlist</button>
+                    <button class="btn" onclick="bcolor(this)">Podcast and more</button>
+                </div>
+
+                <div class="lcardcon">
+
+                    <div class="lcard lactive" onclick="color(this)" id="swayam">       
+                        <img class="cimg" src="img/playlistcover/b1.jpeg">
+                        <div class="name">
+                            <span class="contentplay">My Songs</span><br>
+                            <span class="contentart">Swayam Gode</span> 
+                        </div>
+                    
+                    </div>
+
+                    <div class="lcard" onclick="color(this)" id="bollywood">
+                        <img class="cimg" src="img/playlistcover/b2.jpeg">
+                        <div class="name">
+                            <span class="contentplay">Bollywood</span><br>
+                            <span class="contentart">Mix</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="lcard" onclick="color(this)" id="hiphop">
+                        <img class="cimg" src="img/playlistcover/b3.jpeg">
+                        <div class="name">
+                            <span class="contentplay">Hip Hop</span><br>
+                            <span class="contentart">Mix</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="lcard" onclick="color(this)" id="oldgen">
+                        <img class="cimg" src="img/playlistcover/b4.jpeg">
+                        <div class="name">
+                            <span class="contentplay">Old Gen</span><br>
+                            <span class="contentart">Golden Era</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="lcard" onclick="color(this)" id="podcast">
+                        <img class="cimg" src="img/playlistcover/b5.jpeg">
+                        <div class="name">
+                            <span class="contentplay">Podcast</span><br>
+                            <span class="contentart">Mix</span>
+                        </div>
+                    
+                    </div>
+             </div>
+                
+            </div>
+          
+        </div>  
+
+        <div class="right">
+         
+            <div class="navbar1">
+                <div class="navbar-right">
+                    <a href="index.html" class="active2">Home</a>
+                    <a href="about.html" class="nv1">About Me</a>
+                    <a href="contact.html" class="nv1">Contact</a>
+                </div>
+            </div>
+           
+            <div class="main">
+                <div class="playlistname">
+                    <img class="icon" src="img/Fire_fill.png">
+                    <span class="content" id="bannername">Top Hits</span>
+
+                </div>
+                <div class="conofplay" id="conofplay">
+
+                </div>
+              
+        </div>
+
+        <div class="controls">
+            <button class="bt previous" id="prevBtn"><i class="ph-bold ph-skip-back"></i></button>
+            <button class="bt play-pause" id="playPauseBtn">
+              <i id="playPauseIcon" class="ph-bold ph-play"></i>
+            </button>
+            <button class="bt next" id="nextBtn"><i class="ph-bold ph-skip-forward"></i></button>
+          </div>
+       
+    </div>
+</body>
+<script src="script.js" ></script>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+</html>
